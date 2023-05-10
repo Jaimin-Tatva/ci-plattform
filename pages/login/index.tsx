@@ -1,4 +1,5 @@
 import ImageModal from "@/components/ImageModal";
+import SignInModal from "@/components/SignInModal";
 import { Grid } from "@mui/material";
 
 const Login: React.FC = () => {
@@ -11,7 +12,7 @@ const Login: React.FC = () => {
                         <ImageModal imagePath="/saveEarth2.png" fill={true} height={undefined} width={undefined} />
                     </Grid>
                     <Grid item xs={4}>
-                        This is Login module
+                        <SignInModal />
                     </Grid>
                 </Grid>
             </div>
