@@ -29,7 +29,7 @@ const SignInModal: React.FC<ISignInProps> = () => {
                     />
                 </div>
                 <div style={{ paddingTop: "2ch" }}>
-                    <Button variant="outlined" style={{ borderRadius: "20px", minWidth: "40ch" }}>Login</Button>
+                    <Button variant="outlined" color='error' style={{ borderRadius: "20px", minWidth: "40ch" }}>Login</Button>
                 </div>
                 <div style={{ paddingTop: "2ch", fontSize: "0.9em", textAlign: 'center' }}>
                     Lost your password?
