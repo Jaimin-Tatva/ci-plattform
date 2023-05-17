@@ -35,7 +35,7 @@ const SignInModal: React.FC<ISignInProps> = () => {
                     Lost your password?
                 </div>
                 <div style={{ paddingTop: "2ch", fontSize: "0.9em", textAlign: 'center' }}>
-                    Dont have an account? Create an account
+                    Dont have an account? <span style={{color: "#2B64B1"}}>Create an account</span>
                 </div>
             </Box>
         </>
