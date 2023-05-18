@@ -31,10 +31,10 @@ const SignInModal: React.FC<ISignInProps> = () => {
                 <div style={{ paddingTop: "2ch" }}>
                     <Button variant="outlined" color='error' style={{ borderRadius: "20px", minWidth: "40ch" }}>Login</Button>
                 </div>
-                <div style={{ paddingTop: "2ch", fontSize: "0.9em", textAlign: 'center' }}>
+                <div style={{ paddingTop: "2ch", fontSize: "0.85em", textAlign: 'center' }}>
                     Lost your password?
                 </div>
-                <div style={{ paddingTop: "2ch", fontSize: "0.9em", textAlign: 'center' }}>
+                <div style={{ paddingTop: "2ch", fontSize: "0.85em", textAlign: 'center' }}>
                     Dont have an account? <span style={{color: "#2B64B1"}}>Create an account</span>
                 </div>
             </Box>
