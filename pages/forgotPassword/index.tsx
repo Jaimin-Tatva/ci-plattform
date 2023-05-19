@@ -1,8 +1,9 @@
+import ForgotPasswordModal from "@/components/ForgotPasswordModal";
 import ImageModal from "@/components/ImageModal";
 import SignInModal from "@/components/SignInModal";
 import { Grid } from "@mui/material";
 
-const Login: React.FC = () => {
+const forgotPassword: React.FC = () => {
 
     return (
         <>
@@ -12,7 +13,7 @@ const Login: React.FC = () => {
                         <ImageModal imagePath="/login.png" fill={true} height={undefined} width={undefined} />
                     </Grid>
                     <Grid item xs={4} className="verticle-center">
-                        <SignInModal />
+                        <ForgotPasswordModal />
                         <p>Privacy Policy</p>
                     </Grid>
                 </Grid>
@@ -21,4 +22,4 @@ const Login: React.FC = () => {
     )
 }
 
-export default Login;
+export default forgotPassword;

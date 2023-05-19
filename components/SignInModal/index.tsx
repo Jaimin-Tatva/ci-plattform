@@ -1,7 +1,10 @@
 import { ISignInProps } from './signIn.module';
 import { Box, Button, TextField } from '@mui/material';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 const SignInModal: React.FC<ISignInProps> = () => {
+    const router = useRouter();
 
     return (
         <>
@@ -31,11 +34,13 @@ const SignInModal: React.FC<ISignInProps> = () => {
                 <div style={{ paddingTop: "2ch" }}>
                     <Button variant="outlined" color='error' style={{ borderRadius: "20px", minWidth: "40ch" }}>Login</Button>
                 </div>
-                <div style={{ paddingTop: "2ch", fontSize: "0.85em", textAlign: 'center' }}>
-                    Lost your password?
+                <div style={{ paddingTop: "2ch", fontSize: "0.85em", textAlign: 'center' }} >
+                    <Link href="/forgotPassword">
+                        Lost your password?
+                    </Link>
                 </div>
                 <div style={{ paddingTop: "2ch", fontSize: "0.85em", textAlign: 'center' }}>
-                    Dont have an account? <span style={{color: "#2B64B1"}}>Create an account</span>
+                    Dont have an account? <span style={{ color: "#2B64B1" }}>Create an account</span>
                 </div>
             </Box>
         </>

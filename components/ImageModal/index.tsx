@@ -11,7 +11,6 @@ const ImageModal: React.FC<IImageModalProps> = (props) => {
                 width={!props.fill ? props.width : undefined}
                 height={!props.fill ? props.height : undefined}
                 alt="Picture unable to load" />
-                <p className="positioned">Test with positioning</p>
         </>
     )
 }

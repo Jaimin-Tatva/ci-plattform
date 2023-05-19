@@ -6,13 +6,3 @@
     display: grid;
     place-items: center;
 }
-
-p {
-    background: #0cf;
-    margin-top: -1.6rem;
-    z-index: 100;
-}
-
-p.positioned {
-    position: relative;
-}
