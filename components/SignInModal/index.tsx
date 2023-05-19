@@ -40,7 +40,7 @@ const SignInModal: React.FC<ISignInProps> = () => {
                     </Link>
                 </div>
                 <div style={{ paddingTop: "2ch", fontSize: "0.85em", textAlign: 'center' }}>
-                    Dont have an account? <span style={{ color: "#2B64B1" }}>Create an account</span>
+                    Dont have an account? <span style={{ color: "#2B64B1" }}><Link href="/createNewUser">Create an account</Link></span>
                 </div>
             </Box>
         </>

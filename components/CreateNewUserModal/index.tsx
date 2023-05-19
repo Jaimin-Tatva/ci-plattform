@@ -68,7 +68,7 @@ const CreateNewUserModal: React.FC<ISignInProps> = () => {
                     </Link>
                 </div>
                 <div style={{ paddingTop: "2ch", fontSize: "0.85em", textAlign: 'center' }}>
-                    Already Registered? <span style={{ color: "#2B64B1" }}>Login Now</span>
+                    Already Registered? <span style={{ color: "#2B64B1" }}><Link href="/login">Login Now</Link></span>
                 </div>
             </Box>
         </>
