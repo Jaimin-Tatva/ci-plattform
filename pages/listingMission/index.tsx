@@ -1,26 +1,29 @@
-import CreateNewUserModal from "@/components/CreateNewUserModal";
-import ForgotPasswordModal from "@/components/ForgotPasswordModal";
-import ImageModal from "@/components/ImageModal";
-import SignInModal from "@/components/SignInModal";
-import { Grid } from "@mui/material";
+import MissionCard from "@/components/MissionCard";
+import { Box, } from '@mui/material';
 
-const createNewUser: React.FC = () => {
+const listingMission: React.FC = () => {
 
     return (
         <>
             <div>
-                <Grid container spacing={1} minHeight={720}>
-                    <Grid item xs={8} style={{position: "relative"}}>
-                        <ImageModal imagePath="/login.png" fill={true} height={undefined} width={undefined} />
-                    </Grid>
-                    <Grid item xs={4} className="verticle-center">
-                        <CreateNewUserModal />
-                        <p>Privacy Policy</p>
-                    </Grid>
-                </Grid>
+                Explore: 72 Missions
+            </div>
+            <br/>
+            <div>
+            <Box
+                className="center"
+                component="form"
+                sx={{
+                    '& .MuiTextField-root': { width: '30ch' }
+                    , border: '1px dashed grey'
+                }}
+                noValidate
+            >
+                <MissionCard />                
+            </Box>
             </div>
         </>
     )
 }
 
-export default createNewUser;
+export default listingMission;
